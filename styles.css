@@ -16,6 +16,10 @@ body {
     border-bottom: 2px solid black;
 }
 
+.navbar li a:active {
+    border: 2px dotted black;
+}
+
 .btn-primary {
     background-color: black;
 }
@@ -26,7 +30,7 @@ body {
 }
 
 .hero {
-    background-color: #ebeef4;
+    background-color: #f2f6f9;
 }
 
 .card-flex {
@@ -55,4 +59,21 @@ body {
 .card-body a:hover {
     /* border-bottom: 2px solid #0166b8; */
     text-decoration: underline;
+}
+.card-body a:active,
+.card-body-special:active {
+    border: 2px solid black;
+}
+.card-body-special {
+    text-align: center;
+}
+.card-body-special img {
+    display: inline-block;
+    margin: auto;
+    width: 50px;
+}
+.card-body-special a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
