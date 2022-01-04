@@ -24,3 +24,35 @@ body {
     background-color: black;
     text-decoration: underline;
 }
+
+.hero {
+    background-color: #ebeef4;
+}
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+.card {
+    border: none;
+}
+.card-body {
+    padding: none;
+}
+.card-text {
+    font-size: 14px;
+}
+
+.card-body a {
+    color: #0166b8;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+.card-body a:hover {
+    /* border-bottom: 2px solid #0166b8; */
+    text-decoration: underline;
+}
