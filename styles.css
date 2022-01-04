@@ -1,0 +1,26 @@
+body {
+    margin-right: 60px;
+    margin-left: 60px;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+}
+.navbar-brand img {
+    width: 120px;
+}
+
+.navbar li {
+    font-size: 0.8em;
+}
+
+.navbar li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.btn-primary {
+    background-color: black;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    text-decoration: underline;
+}
