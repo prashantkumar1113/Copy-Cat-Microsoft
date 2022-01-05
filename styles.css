@@ -83,7 +83,8 @@ body {
     text-decoration: underline;
 }
 .card-body a:active,
-.card-body-special:active {
+.card-body-special:active,
+.covid-box a:active {
     background-color: aliceblue;
     border: 2px solid black;
 }
