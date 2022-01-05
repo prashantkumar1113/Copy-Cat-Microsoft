@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 body {
-    margin-right: 60px;
-    margin-left: 60px;
     font-family: Segoe UI, SegoeUI, "Open Sans", "Helvetica Neue", Helvetica,
         Arial, sans-serif;
 }
+
+.row {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
 .navbar-brand img {
     width: 120px;
 }
@@ -42,9 +46,9 @@ body {
 .new {
     display: inline-block;
     background-color: #feb902;
-    padding: 10px 15px 10px 15px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
     text-align: center;
     font-weight: bolder;
 }
@@ -53,7 +57,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    width: 100%;
 }
 .card {
     border: none;
@@ -74,7 +77,8 @@ body {
     text-decoration: none;
     display: block;
 }
-.card-body a:hover {
+.card-body a:hover,
+.covid-box a:hover {
     /* border-bottom: 2px solid #0166b8; */
     text-decoration: underline;
 }
@@ -91,13 +95,25 @@ body {
     margin: auto;
     width: 50px;
 }
-.card-body-special a {
+.card-body-special a,
+.covid-box a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-footer {
+.covid-box {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.covid-box h2 {
+    font-weight: bolder;
+}
+
+.bg-gray {
     background-color: #f2f2f2;
 }
 
