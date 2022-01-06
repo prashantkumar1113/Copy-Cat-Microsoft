@@ -44,7 +44,8 @@ footer a:active {
     background-color: #f2f6f9;
 }
 
-.hero h3 {
+.hero h3,
+h4 {
     font-weight: bolder;
 }
 .new {
