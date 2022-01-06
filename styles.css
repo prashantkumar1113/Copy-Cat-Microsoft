@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
+@media (min-width: 1000px) {
+    .row {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+}
 body {
     font-family: Segoe UI, SegoeUI, "Open Sans", "Helvetica Neue", Helvetica,
         Arial, sans-serif;
-}
-
-.row {
-    margin-right: 60px;
-    margin-left: 60px;
 }
 
 .navbar-brand img {
@@ -58,7 +59,7 @@ footer a:active {
 .card-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
 }
 .card {
