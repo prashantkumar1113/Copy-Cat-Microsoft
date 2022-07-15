@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+@media (min-width: 1000px) {
+    .row {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+}
+$active-border: 2px dotted black;
+$fonts: Segoe UI, SegoeUI, "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+$text-gray: #616161;
+%card-text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+%card-active-link {
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+body {
+    font-family: $fonts;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+.navbar li {
+    font-size: 0.8em;
+    a:hover {
+        border-bottom: 2px solid black;
+    }
+    a:active {
+        border: $active-border;
+    }
+}
+
+.btn-primary {
+    background-color: black;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: bold;
+    &:hover {
+        background-color: black;
+        text-decoration: underline;
+    }
+}
+
+.hero {
+    background-color: #f2f6f9;
+    h3,
+    h4 {
+        font-weight: bolder;
+    }
+}
+
+.new {
+    display: inline-block;
+    background-color: #feb902;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-weight: bolder;
+}
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    border: none;
+    h5 {
+        font-weight: bolder;
+    }
+}
+
+.card-body {
+    padding: none;
+    a {
+        color: #0166b8;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        &:active {
+            @extend %card-active-link;
+        }
+    }
+}
+.card-text {
+    font-size: 14px;
+}
+
+.card-body a:hover,
+.covid-box a:hover,
+footer a:hover {
+    /* border-bottom: 2px solid #0166b8; */
+    text-decoration: underline;
+}
+
+.card-body-special {
+    text-align: center;
+    &:active {
+        @extend %card-active-link;
+    }
+    img {
+        display: inline-block;
+        margin: auto;
+        width: 50px;
+    }
+    a {
+        @extend %card-text;
+    }
+}
+
+.covid-box {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    h2 {
+        font-weight: bolder;
+    }
+    a {
+        @extend %card-text;
+        &:active {
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+    }
+}
+
+.bg-gray {
+    background-color: #f2f2f2;
+}
+
+.social i {
+    padding-left: 10px;
+}
+
+footer {
+    h5 {
+        color: $text-gray;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bolder;
+    }
+
+    li a {
+        color: $text-gray;
+        font-size: 10px;
+        text-decoration: none;
+    }
+    a:active {
+        border: $active-border;
+    }
+}
